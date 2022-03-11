@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api/issues"
   },
-  "homepage": "https://github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api#readme"
+  "homepage": "https://github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
