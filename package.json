@@ -1,0 +1,19 @@
+{
+  "name": "ibrahim-abudalah-brainflix-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api/issues"
+  },
+  "homepage": "https://github.com/Ibrahimabudalah/ibrahim-abudalah-brainflix-api#readme"
+}
