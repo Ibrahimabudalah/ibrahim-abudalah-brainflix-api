@@ -1,0 +1,13 @@
+const express = reqiore("express");
+const app = express();
+
+
+
+
+
+
+
+//listener
+app.listen(8080, () =>{
+    console.log("server is running on port 8080")
+})
