@@ -32,15 +32,15 @@ router.post("/", (req, res) => {
         channel: "CodeBro",
         image: "http://localhost:8080/images/image9.jpg",
         description: req.body.description,
-        views: 324,
-        likes: 9001,
+        views: 1,
+        likes: 1,
         timestamp: Date.now(),
         comments: [
             {
                 name: "Ibrahim Abudalah",
                 comment:"We recently stayed at the Inn for our honeymoon. I definitely recommend the experience. We can’t wait to return for our anniversary!",
                 timestamp: Date.now(),
-                likes: 12412
+                likes: 0
             }
         ]
     }
