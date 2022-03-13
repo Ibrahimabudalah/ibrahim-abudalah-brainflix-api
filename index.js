@@ -1,9 +1,17 @@
+require("dotenv").config()
 const express = require("express");
 const app = express();
-require("dotenv").config()
-const { PORT, BACKEND_URL } = process.env
 const cors = require("cors")
+// const { PORT, BACKEND_URL } = process.env
 
+//this will use the public folder to display the images and it will be as in "http://localhost:8080/images/<imageName>"
+app.use(express.static("public"))
+
+//this is used to access the request.body in the POST request
+app.use(express.json())
+
+//enables cors
+app.use(cors())
 
 
 //middleware
@@ -12,17 +20,11 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use(express.static("public"))
-app.use(express.json())
-app.use(cors())
-
-
 //routes
 const route = require("./routes/videos")
 app.use("/videos", route)
 
 //listener
 app.listen(process.env.PORT, () =>{
-    // console.log(process.env.BACKEND_URL+`:${PORT}`)
     console.log("server is running on port 8080")
 })
