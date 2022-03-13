@@ -1,8 +1,9 @@
-const { randomUUID } = require("crypto");
 const express = require("express");
 const router = express.Router();
-const fs = require("fs")
-const uuid = require("uuid")
+const fs = require("fs");
+const { title } = require("process");
+const { v4: uuidv4 } = require('uuid');
+
 
 const selectVideos = () =>{
     const readVideos =  JSON.parse(fs.readFileSync("./data/videos.json"))
@@ -24,7 +25,18 @@ router.get("/:id", (req, res) => {
 
 //route for the video post
 router.post("/", (req, res) => {
-    
+    const newVideo = {
+        id: uuidv4(),
+        title: req.body.title,
+        description: req.body.description,
+    }
+    const readFile = selectVideos();
+    readFile.push(newVideo)
+
+
+    fs.writeFileSync("./data/videos.json", JSON.stringify(readFile))
+    res.json(newVideo).status(200)
+    console.log(newVideo)
 })
 
 

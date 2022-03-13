@@ -11,6 +11,9 @@ app.use((req, res, next) => {
     console.log("Incoming request")
     next()
 })
+
+app.use(express.json())
+
 app.use(cors())
 
 
@@ -20,6 +23,6 @@ app.use("/videos", route)
 
 //listener
 app.listen(process.env.PORT, () =>{
-    console.log(process.env.BACKEND_URL+`:${PORT}`)
+    // console.log(process.env.BACKEND_URL+`:${PORT}`)
     console.log("server is running on port 8080")
 })
