@@ -14,7 +14,7 @@ const selectVideos = () =>{
 router.get("/", (req, res) => {
     res.send(selectVideos())
     .status(200)
-})
+}) 
 
 //route for the individual video id
 router.get("/:id", (req, res) => {
