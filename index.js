@@ -2,7 +2,6 @@ require("dotenv").config()
 const express = require("express");
 const app = express();
 const cors = require("cors")
-// const { PORT, BACKEND_URL } = process.env
 
 //this will use the public folder to display the images and it will be as in "http://localhost:8080/images/<imageName>"
 app.use(express.static("public"))
