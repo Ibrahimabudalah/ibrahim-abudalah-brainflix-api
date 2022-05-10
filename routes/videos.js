@@ -47,7 +47,7 @@ router.post("/", (req, res) => {
     // storing the JSON file in a variable and then pushing the new created video to that file
     let writeToFile = selectVideos();
     writeToFile.push(newVideo)
-    
+     
     //writing to the JSON file
     fs.writeFileSync("./data/videos.json", JSON.stringify(writeToFile))
     res.json(newVideo).status(201)
