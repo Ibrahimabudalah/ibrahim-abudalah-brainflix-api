@@ -11,7 +11,7 @@ const selectVideos = () =>{
 }
 
 //route for videos
-router.get("/", (req, res) => {
+router.get("https://brainflix-apii.herokuapp.com/", (req, res) => {
     res.send(selectVideos())
     .status(200)
 }) 
