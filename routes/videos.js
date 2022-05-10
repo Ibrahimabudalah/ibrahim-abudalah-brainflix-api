@@ -30,7 +30,7 @@ router.post("/", (req, res) => {
         id: uuidv4(),
         title: req.body.title,
         channel: "CodeBro",
-        image: "http://localhost:8080/images/image9.jpg",
+        image: "https://brainflix-apii.herokuapp.com/images/image9.jpg",
         description: req.body.description,
         views: 1,
         likes: 1,
