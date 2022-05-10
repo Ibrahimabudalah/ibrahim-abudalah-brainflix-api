@@ -24,6 +24,6 @@ const route = require("./routes/videos")
 app.use("/videos", route)
 
 //listener
-app.listen(process.env.PORT, () =>{
+app.listen(process.env.PORT || 8080, () =>{
     console.log("server is running on port 8080")
 })
