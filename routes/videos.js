@@ -29,7 +29,7 @@ router.post("/", (req, res) => {
     id: uuidv4(),
     title: req.body.title,
     channel: "CodeBro",
-    image: "https://morning-shelf-42466.herokuapp.com/images/image9.jpg",
+    image: "https://candid-rolypoly-aca917.netlify.app/images/image9.jpg",
     description: req.body.description,
     views: 1,
     likes: 1,
